@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Popup Image Button</title>
+  <style>
+    /* Popup container */
+    .popup-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black background */
+      z-index: 9999;
+    }
+
+    /* Popup content */
+    .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="openPopup()">Open Popup Image</button>
+
+  <!-- Popup container -->
+  <div id="popupContainer" class="popup-container">
+    <!-- Popup content -->
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span> <!-- Close button -->
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxj0DGdNFE9qqYOk-UpDl4WsF4JEcvxH34l5_v4z1LL6jLFq01Xcs1RV92p1oyeTHvIP_azdFIrxITGzGAnlYFpXiPAWkAt8ndfOKqvIqj6xfrURLaWBL-57pzZQhPEqT3woUmC8VYDfOYB1Af56rZcnc1DyaaLxXSiUBThwyn1gjAucfKvZF_9Id8/w378-h640/Razorpay_screen.png"
+        alt="Popup Image"> <!-- Image URL placeholder -->
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById('popupContainer').style.display = 'block'; // Display the popup container
+    }
+
+    function closePopup() {
+      document.getElementById('popupContainer').style.display = 'none'; // Hide the popup container
+    }
+  </script>
+
+</body>
+
+</html>

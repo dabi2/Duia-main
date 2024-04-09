@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="dashboardStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD | PANEL</title>
+</head>
+<!-- <script>
+    function showText(week) {
+        var textContainer = document.getElementById("text-container");
+        textContainer.innerHTML = "<h2>" + week + "</h2><p>This is the content for " + week + ".</p>";
+    }
+    function toggleChapters() {
+        var chapterList = document.getElementById("chapter-list");
+        chapterList.classList.toggle("active"); // Toggle the "active" class to show/hide the chapter list
+    }
+</script> -->
+<script>
+    function showText(week) {
+        var textContainer = document.getElementById("text-container");
+        textContainer.innerHTML = "<h2>" + week + "</h2><p>This is the content for " + week + ".</p>";
+    }
+
+    function toggleDashboard() {
+        var toggleDashboard = document.getElementById("toggle_dashboard");
+        toggleDashboard.classList.toggle("show"); // Toggle the "show" class to show/hide the sub links
+    }
+</script>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="libs/Duia-Logo-png.png" alt=""></a>
+
+        </div>
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="sidebar">
+        <h3>Dashboard</h3>
+        <div class="sidebar1">
+            <a href="#" onclick="toggleDashboard()">Tour</a>
+            <ul id="toggle_dashboard" class="toggle_dashboard">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        &nbsp;
+        <div class="sidebar1">
+            <a href="#" onclick="toggleDashboard()">Admission</a>
+            <ul id="toggle_dashboard" class="toggle_dashboard">
+                <li><a href="#">100</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        &nbsp;
+        <div class="sidebar1">
+            <a href="#" onclick="toggleDashboard()">Training</a>
+            <ul id="toggle_dashboard" class="toggle_dashboard">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        &nbsp;
+        <div class="sidebar1">
+            <a href="#" onclick="toggleDashboard()">Users</a>
+            <ul id="toggle_dashboard" class="toggle_dashboard">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content_dashboard">
+        <div class="parent_of_Active_users">
+            <div class="column_for_users">
+                <div class="row1">
+                    <h1>165</h1>
+
+                    <!-- <h1><i class="fa-regular fa-user"> active</i></h1> -->
+                    <!-- <h1>169</h1> -->
+                </div>
+                <hr style="width: 90px; height: 1px; background-color: black;">
+                <h3>Active Users</h3>
+            </div>
+            <div class="column_for_users">
+                <div class="row1">
+                    <h1>200 +</h1>
+                    <!-- <h1><i class="fa-regular fa-user"> active</i></h1> -->
+                    <!-- <h1>169</h1> -->
+                </div>
+                <hr style="width: 90px; height: 1px; background-color: black;">
+                <h3>Total Users</h3>
+            </div>
+            <div class="column_for_users">
+                <div class="row1">
+                    <h1>20 +</h1>
+                    <!-- <h1><i class="fa-regular fa-user"> active</i></h1> -->
+                    <!-- <h1>169</h1> -->
+                </div>
+                <hr style="width: 90px; height: 1px; background-color: black;">
+                <h3>Courses</h3>
+            </div>
+            <div class="column_for_users">
+                <div class="row1">
+                    <h1>50 +</h1>
+                    <!-- <h1><i class="fa-regular fa-user"> active</i></h1> -->
+                    <!-- <h1>169</h1> -->
+                </div>
+                <hr style="width: 90px; height: 1px; background-color: black;">
+                <h3>Tour Visited</h3>
+            </div>
+
+        </div>
+        <div class="table_result">
+            <h2>Welcome to the Dashboard</h2>
+            <p>This is the main content area where you can display various widgets, charts, and information relevant to
+                the
+                dashboard.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

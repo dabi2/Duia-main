@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .navbar h1{
+    font-family: "audiowide",sans-serif;
+
+  }
+  .logo img{
+    float: left;
+    height: 90px;
+    width: 90px;
+  }
+  /* 013220 */
+  /* 003331 */
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: grey;
+    position: fixed;
+    /* color: #003331; */
+    /* top: 0; */
+    padding-left: 40px ;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar a {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100px;
+  }
+  .toggle_dashboard{
+    display: none;
+  }
+  .toggle_dashboard.show{
+    display: block;
+  }
+
+  .content_dashboard {
+    margin-left: 250px; /* Adjust according to sidebar width */
+    padding: 20px;
+  }
+
+
+  /* Style for active link */
+  .active {
+    background-color: #ddd;
+  }
+  /* column_for_users  active Users*/
+  .column_for_users img{
+    height: 100px;
+    width: 100px;
+  }
+  .column_for_users{
+    text-align: center;
+    padding: 5px;
+    border: solid;
+    margin-right: 20px;
+  }
+  .parent_of_Active_users{
+    display: flex;
+    margin-left: 100px;
+  }
+  .row1{
+    padding: 20px;
+    display: flex;
+  }
+  .row1 img{
+    height: 50px;
+    width: 50px;
+  }
+  /* column_for_users  active Users*/
+  .table_result{
+    margin-left: 100px;
+  }

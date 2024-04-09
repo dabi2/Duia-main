@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 usn"> <![endif]--><!--[if IE 7 ]>    <html lang="en" class="no-js ie7 usn"> <![endif]--><!--[if IE 8 ]>    <html lang="en" class="no-js ie8 usn"> <![endif]--><!--[if IE 9 ]>    <html lang="en" class="no-js ie9 usn"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltl" lang="en" class="no-js usn"><!--<![endif]-->
+
+<head>
+    <style>
+        /* Popup container */
+        .popup-container {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          /* Semi-transparent black background */
+          z-index: 9999;
+        }
+    
+        /* Popup content */
+        .popup-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Close button */
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+        }
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=2">
+
+    <link rel="canonical" href="https://dct.ac.ae/en/">
+    <title>Home | DUIA College of Tourism</title>
+    <meta name="description"
+        content="DCT is unique because our courses are designed to meet the needs of both our students and their future employers. As a vocational college.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home | Dubai College of Tourism">
+    <meta property="og:image" content="images/dct-logo_13.jpg">
+    <meta property="og:url" content="https://dct.ac.ae/en/">
+    <meta property="og:description"
+        content="DCT is unique because our courses are designed to meet the needs of both our students and their future employers. As a vocational college.">
+    <meta property="og:site_name" content="Dubai College of Tourism">
+
+    <!-- uSkinned Icons CSS -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="css/slick-carousel-1.8.1.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/ekko-lightbox-5.3.0.min.css">
+    <!-- uSkinned Compiled CSS -->
+    <!--<link rel="stylesheet" href="/style.axd?styleId=3942">-->
+    <link rel="stylesheet" href="css/global.css">
+
+
+
+    <meta name="msapplication-square70x70logo" content="/media/8d8104ee7a59478/dct-logo.jpg?width=70&amp;height=70">
+    <meta name="msapplication-square150x150logo" content="/media/8d8104ee7a59478/dct-logo.jpg?width=150&amp;height=150">
+    <meta name="msapplication-wide310x150logo" content="/media/8d8104ee7a59478/dct-logo.jpg?width=310&amp;height=150">
+    <meta name="msapplication-square310x310logo" content="/media/8d8104ee7a59478/dct-logo.jpg?width=310&amp;height=310">
+
+    <!-- payment gateway option -->
+    <script>
+        function openPopup() {
+            document.getElementById('popupContainer').style.display = 'block'; // Display the popup container
+        }
+
+        function closePopup() {
+            document.getElementById('popupContainer').style.display = 'none'; // Hide the popup container
+        }
+    </script>
+    <!-- payment gateway option -->
+
+
+
+    <!-- Global site tag (gtag.js) - Google Ads: 10854066395 -->
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10854066395');
+    </script>
+
+    <meta name="google-site-verification" content="mXyuu7aKQlnhTiQ1TxSluBqzk__bdm12_4ICrowEVWo">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-86210311-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-86210311-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KBXGQZX');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '782960523890286');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="libs/Duia-Logo-png.png" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B3CR5VGSXR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B3CR5VGSXR');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16499586125"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16499586125');
+    </script>
+
+
+
+
+</head>
+
+<body class="banner-top    ">
+
+    <!--LeadSquared Tracking Code Start-->
+    <script type="text/javascript" src="js/Tracker.js"></script>
+    <script type="text/javascript">
+        pidTracker('53071');
+    </script>
+    <!--LeadSquared Tracking Code End--> <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXGQZX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+    <!-- Skip to content -->
+    <a class="skip-to-content sr-only sr-only-focusable" href="#site-content">Skip to main content</a>
+    <!--// Skip to content -->
+    <!-- Site -->
+    <div id="site">
+
+        <!-- Header -->
+        <header id="site-header">
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <!-- <div id="logo"><a href="#" title="DuiaTrailblazer">Duia | Trailblazer Courses</a></div> -->
+                    <!-- <div id="logo"><a href="#" title="DuiaTrailblazer">Duia | Trailblazer Courses</a></div> -->
+
+
+
+
+                    <!-- Expand -->
+                    <a class="expand">
+                        <span></span>
+                        <em>Menu</em>
+                    </a>
+                    <!--// Expand -->
+
+                    <!-- Navigation -->
+                    <div class="navigation">
+
+                        <!-- Reveal -->
+                        <div class="reveal">
+
+                            <!-- Main navigation -->
+
+                            <nav class="main">
+                                <ul>
+                                    <li class="has-child ">
+                                        <span><a href="#">ABOUT DUIA</a></span>
+                                        <ul>
+                                            <li class="no-child ">
+                                                <span><a href="#">DUIA Life</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">Our Instructors</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">Board of Governors</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">International Recognition</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#/">Student Support Services</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">Student Success Stories</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="">DUIA Podcast</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="">Organisational Chart</a></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child ">
+                                        <span><a href="#">COURSES</a></span>
+                                        <ul>
+                                            <li class="no-child ">
+                                                <span><a href="#">Tourism</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">Events</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">Hospitality</a></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child ">
+                                        <span><a href="#">ADMISSION</a></span>
+                                        <ul>
+                                            <li class="no-child ">
+                                                <span><a href="#">Fees and Scholarships</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#">Student Support Services</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="">DUIA Open Days</a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#" target="_blank"
+                                                        title="Link will open in a new window/tab">FAQs<i
+                                                            class="icon usn_ion-md-open after"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="has-child ">
+                                        <span><a href="#">STUDENT PORTALS</a></span>
+                                        <ul>
+                                            <li class="no-child ">
+                                                <span><a href="#" target="_blank"
+                                                        title="Link will open in a new window/tab">Learning Management
+                                                        System (LMS)<i
+                                                            class="icon usn_ion-md-open after"></i></a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#" target="_blank"
+                                                        title="Link will open in a new window/tab">Student Information
+                                                        System (SIS)<i
+                                                            class="icon usn_ion-md-open after"></i></a></span>
+                                            </li>
+                                            <li class="no-child ">
+                                                <span><a href="#" target="_blank"
+                                                        title="Link will open in a new window/tab">Internship Portal<i
+                                                            class="icon usn_ion-md-open after"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </nav>
+
+
+
+
+                            <!--// Main navigation -->
+                            <!-- CTA Links -->
+
+
+                            <!--// CTA Links -->
+                            <!-- Secondary navigation -->
+
+                            <!-- Secondary navigation -->
+                            <nav class="secondary">
+                                <ul>
+                                    <li><span><a href="pages/language.html" target="_self">Eng</a></span></li>
+                                    <li><span><a href="pages/language.html" target="_self">Hindi</a></span></li>
+
+                                </ul>
+                            </nav>
+                            <!--// Secondary navigation -->
+
+
+                            <!--// Secondary navigation -->
+
+                        </div>
+                        <!--// Reveal -->
+
+                    </div>
+                    <!--// Navigation -->
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <!--// Header -->
+        <!-- Content -->
+
+        <div class="Admission Form">
+            <h2>Admission Form</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="courses">Course:</label>
+                    <select name="course" id="course">
+                        <option value="BTS">Bachelor of Tourism Studies</option>
+                        <option value="BTM">Bachelor of Tourism Management</option>
+                        <option value="DTT">National N Diploma in Travel and Tourism</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option id="" name="" value="">Select Gender</option>
+                        <option id="male" name="male" value="male">Male</option>
+                        <option id="female" name="female" value="female">Female</option>
+                        <option id="other" name="other" value="other">Other</option>
+                    </select>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div> -->
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" onsubmit="">
+                </div>
+                <div class="nextpage"><a href="course.html"><button type="button">This is just a Test go to
+                            courses</button></a>
+                </div>
+                &nbsp;
+
+                <!-- Popup container -->
+                <button onclick="openPopup()">Open Popup Image</button>
+                <div id="popupContainer" class="popup-container">
+                    <!-- Popup content -->
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup()">&times;</span> <!-- Close button -->
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxj0DGdNFE9qqYOk-UpDl4WsF4JEcvxH34l5_v4z1LL6jLFq01Xcs1RV92p1oyeTHvIP_azdFIrxITGzGAnlYFpXiPAWkAt8ndfOKqvIqj6xfrURLaWBL-57pzZQhPEqT3woUmC8VYDfOYB1Af56rZcnc1DyaaLxXSiUBThwyn1gjAucfKvZF_9Id8/w378-h640/Razorpay_screen.png"
+                            alt="Popup Image"> <!-- Image URL placeholder -->
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="site-footer" class="footer-bg">
+            <div class="container">
+
+                <!-- Row -->
+                <div class="row">
+
+
+                    <div class="footer-item   col-lg-3 col-md-3 col-12 col">
+
+                        <div class="item  item_text-below text-left " data-os-animation="" data-os-animation-delay="">
+                            <div class="inner  ">
+                                <div class="info info_align-bottom">
+                                    <div class="text footer-text">
+                                        <p class="heading footer-heading">CAMPUS LOCATION</p>
+                                        <div class="text footer-text">
+                                            <p>Shillong Duia College Tourism</p>
+                                            <p>Tel:�&nbsp;(+91) 21452 23654</p>
+                                            <p>Location: Prime Hub office,Polo Ground</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-item   col-lg-3 col-md-3 col-12 col">
+
+                        <div class="item  item_search-links">
+                            <div class="inner">
+
+                                <p class="heading footer-heading">Browse</p>
+                                <!-- Quick Links -->
+                                <nav class="quick-links">
+
+                                    <ul>
+                                        <li><span><a href="/en/">Home</a></span></li>
+                                        <li><span><a href="/en/faq/">FAQ</a></span></li>
+                                        <li><span><a href="#">ADMISSION</a></span></li>
+                                        <li><span><a href="/media/ux1m5akc/dct007_dct-brochure-2024_v4_finalpdf.pdf"
+                                                    target="_blank" title="Link will open in a new window/tab">Download
+                                                    Brochure<i class="icon usn_ion-md-open after"></i></a></span></li>
+                                    </ul>
+                                </nav>
+                                <!--// Quick Links -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-item   col-lg-3 col-md-3 col-12 col">
+
+                        <div class="item  item_social-links " data-os-animation="" data-os-animation-delay="">
+                            <div class="inner">
+
+                                <p class="heading footer-heading">Get in touch</p>
+
+                                <nav class="social">
+
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <a href="https://www.instagram.com/duiatrailblazers/" target="_blank"
+                                                    title="Link will open in a new window/tab">
+                                                    <img class="lazyload"
+                                                        src="data:image/jpeg;base64,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"
+                                                        alt="Facebook">
+                                                </a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <a href="#" target="_blank" title="Link will open in a new window/tab">
+                                                    <img class="lazyload"
+                                                        src="data:image/png;base64,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"
+                                                        alt="instegram">
+                                                </a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <a href="#" target="_blank" title="Link will open in a new window/tab">
+                                                    <img class="lazyload"
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"
+                                                        alt="linkedin">
+                                                </a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <a href="#" target="_blank" title="Link will open in a new window/tab">
+                                                    <img class="lazyload"
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAwklEQVR4AWNwL/ChKx6GFo5a+J+BQRmIfYE4HYgrgLgLiOdA8VqsGCHfBdWTDjVDGaeFQElmIL4CxP+pjK/gsnA7SAGN8FpsFv6nJUaxECggSmsLQXYgW2hOlKbs7P//7ezItVAf2UJfojTNnv0fDNauJcdCX2QLo0iwEAHa2si2MJ1ECxHg1StIUBPWH0V3C+kepOQnmi1byE809M8W9M/49C/a6F940796wqyAo/BUvtuRMZ5KOApk1mibhmI8aiEAWJrZd6IgmiUAAAAASUVORK5CYII="
+                                                        alt="Youtube">
+                                                </a>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-item   col-lg-3 col-md-3 col-12 col">
+
+                        <div class="item  item_search-links">
+                            <div class="inner">
+
+                                <p class="heading footer-heading">Search</p>
+                                <!-- Site search -->
+                                <div class="site-search">
+                                    <form role="search" action="/en/search-results/" method="get" name="searchForm">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <label class="control-label d-none" for="search_field">Search the
+                                                    site</label>
+                                                <input type="text" class="form-control" name="search_field"
+                                                    aria-label="Search the site" placeholder="Search the site">
+                                            </div>
+                                            <button type="submit" role="button" aria-label="Search"
+                                                class="btn base-btn-bg base-btn-text base-btn-borders btn-search"><i
+                                                    class="icon usn_ion-ios-search"></i></button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <!--// Site search -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--// Row -->
+                <!-- Row -->
+                <div class="row">
+
+                    <div class="col">
+                        <nav class="footer-navigation">
+                            <ul>
+                                <li>
+                                    <div>© 2024 Design by Dabiang</div>
+                                </li>
+                                <br>
+                                <li><span><a href="#">Terms and Conditions</a></span></li>
+                                <li><span><a href="#">Privacy Policy</a></span></li>
+                                <li><span><a href="#">DCT COOKIE POLICY</a></span></li>
+                                <li><span><a href="#">This site is maintained by Duia College
+                                            of Tourism.</a></span></li>
+                                <li><span><a href="#">Sitemap check from goverment website example</a></span></li>
+
+
+                                <li class="site-credit">
+                                    <div> </div>
+                                    <span><a target="_blank" title="Link will open in a new window/tab"
+                                            href=""></a></span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!--// Row -->
+
+            </div>
+        </footer>
+        <!--// Footer -->
+    </div>
+    <!--// Site -->
+    <!-- Back to top -->
+    <div class="usn_back-to-top position-left">
+        <a role="button" aria-label="Back to top" class="btn base-btn-bg base-btn-text base-btn-borders btn-back-to-top"
+            href="#top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+            <i class="icon usn_ion-md-arrow-dropup"></i><span class="d-none">Back to top</span>
+        </a>
+    </div>
+    <!--// Back to top -->
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/popper-1.14.7.min.js"></script>
+    <script src="js/bootstrap-4.3.1.min.js"></script>
+    <script src="js/jquery.validate-1.19.0.min.js"></script>
+    <script src="js/jquery.validation-unobtrusive-3.2.11.min.js"></script>
+    <!-- Slide Carousel Script -->
+    <script src="js/slick-carousel-1.8.1.min.js"></script>
+    <!-- Lightbox Script -->
+    <script src="js/ekko-lightbox-5.3.0.min.js"></script>
+    <!-- Instagram Feed Script -->
+    <script src="js/instagramfeed.js"></script>
+    <!-- uSkinned Scripts -->
+    <script src="js/plugins.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.unobtrusive-ajax.js"></script>
+
+    <script src="js/webchat.js"></script>
+
+    <!-- <div id="bcio-whatsapp-widget"></div>
+    <script> window.bIOWAWidgetOptions = { position: "right", brandName: "Business chat", brandSubTitle: "Typically replies within a day", phoneNumber: "8131995202", welcomeText: "", defaultUserMessage: "*Let us help you!*", ctaText: "Send Message", iconBackgroundColor: "#1eb31d", iconColor: "#ffffff", iconText: "Need more information", icon: "10", avatarPictureUrl: "", avatarName: "Registrar Office   ", caption: "Working hours: 8:00 - 17:00, Monday - Friday", bubbleBackgroundColor: "#119710", ctaBackground: "#1eb31d", showCtaWAIcon: "true", device: "ALL", email: "duia@gmail.com", pages: { type: "ALL", pages: [] }, timeOnSite: 0, scrollPosition: 0, messageImageUrl: "https://storage.googleapis.com/businesschat-platform-uploads/acd37d82-39ac-477d-94ea-2f63abcc203c.png", includePageUrl: false }; </script>
+    <script src="js/vendors~main~widget.js"></script> -->
+    <!-- <script src="js/widget.js"></script> -->
+    <!-- <script src="js/runtime-widget.js"></script> -->
+
+    <!-- Rounded buttons -->
+    <!-- <style>
+        .btn {
+            border-radius: 10px !important;
+        }
+    </style> -->
+    <!--// Rounded buttons -->
+
+
+
+
+
+</body><!--
+    ____        _ ____              _ __  __             _____ __   _                      __
+   / __ )__  __(_) / /_   _      __(_) /_/ /_     __  __/ ___// /__(_)___  ____  ___  ____/ /
+  / __  / / / / / / __/  | | /| / / / __/ __ \   / / / /\__ \/ //_/ / __ \/ __ \/ _ \/ __  /
+ / /_/ / /_/ / / / /_    | |/ |/ / / /_/ / / /  / /_/ /___/ / ,< / / / / / / / /  __/ /_/ /
+/_____/\__,_/_/_/\__/    |__/|__/_/\__/_/ /_/   \__,_//____/_/|_/_/_/ /_/_/ /_/\___/\__,_/
+
+Find out more at uSkinned.net
+
+-->
+
+</html>
